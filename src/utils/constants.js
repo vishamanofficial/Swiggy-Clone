@@ -1,0 +1,6 @@
+//usisng Named export
+//by using this, you can export multiple things
+
+export const CDN_URL = "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/";
+
+export const LOGO_URL = "https://cdn.worldvectorlogo.com/logos/swiggy-1.svg";
