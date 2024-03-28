@@ -24,12 +24,16 @@ const Body = () => {
 
   const fetchData = async () => {
     // const data = await fetch(
-    //   "https://www.swiggy.com/dapi/restaurants/list/v5?lat=26.8467126&lng=80.9460872&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+    //   "https://corsproxy.org/?https%3A%2F%2Fwww.swiggy.com/dapi/restaurants/list/v5?lat=26.8467126&lng=80.9460872&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
     // );
 
     const data = await fetch(
-      "https://corsproxy.org/?https%3A%2F%2Fwww.swiggy.com%2Fdapi%2Frestaurants%2Flist%2Fv5%3Flat%3D19.0177989%26lng%3D72.84781199999999%26is-seo-homepage-enabled%3Dtrue%26page_type%3DDESKTOP_WEB_LISTING"
+      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=26.8467126&lng=80.9460872&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
     );
+
+    // const data = await fetch(
+    //   "https://corsproxy.org/?https%3A%2F%2Fwww.swiggy.com%2Fdapi%2Frestaurants%2Flist%2Fv5%3Flat%3D19.0177989%26lng%3D72.84781199999999%26is-seo-homepage-enabled%3Dtrue%26page_type%3DDESKTOP_WEB_LISTING"
+    // );
 
     const json = await data.json();
 
@@ -52,6 +56,7 @@ const Body = () => {
 
   return (
     <div>
+      <h1 className="text-2xl p-8 text-center font-bold mb-2">Please enable "Allow CORS: Access-Control-Allow-Origin" extension.</h1>
       <div className="flex justify-between items-center mt-4 mb-4 ml-[150px] mr-[150px]">
         <h2 className="text-2xl font-bold mb-2">What's on your mind?</h2>
       </div>
