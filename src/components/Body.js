@@ -51,6 +51,7 @@ const Body = () => {
 
   return (
     <div>
+      <h1 className="text-2xl p-8 text-center font-bold mb-2">Please enable "Allow CORS: Access-Control-Allow-Origin" extension.</h1>
       <div className="flex justify-between items-center mt-4 mb-4 ml-[150px] mr-[150px]">
         <h2 className="text-2xl font-bold mb-2">What's on your mind?</h2>
       </div>
