@@ -10,7 +10,7 @@ const RestaurantCard = (props) => {
 
   return (
     <div className="w-[280px] m-5">
-      <img className="rounded-2xl" src={CDN_URL + cloudinaryImageId} />
+      <img className="rounded-2xl w-[280px] h-[200px]" src={CDN_URL + cloudinaryImageId} />
 
       <h3 className="text-lg pt-2 font-medium">{name}</h3>
 
