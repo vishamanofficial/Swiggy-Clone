@@ -4,16 +4,9 @@ import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Header = () => {
-  // hm yaha pe useState ka use krke login logout button bana rahe hain
+
   const [btnNameReact, setBtnNameReact] = useState("Login");
 
-  // if no dependency array is present then then useEffect is called on every render
-  // if empty dependency array is present then useEffect is called only on initial render (just once)
-  // is something present in depencey array as a dependency then useEffect is called everytime that dependency is updated
-
-  // useEffect( ()=>{
-  //     console.log("useEffect callled");
-  // }, [btnNameReact]);
   const onlineStatus = useOnlineStatus();
 
   return (
@@ -24,9 +17,6 @@ const Header = () => {
           <img className="w-11 items-center  " src={LOGO_URL} />{" "}
         </Link>
       </div>
-      {/* <div className="flex items-center ml-[-300px]">
-                <p className="">Lucknow, Uttar Pradesh</p>
-            </div> */}
       <div className=" mr-[40px] flex items-center">
         <ul className="flex p-3 text-lg">
           <li className="p-4">Online Status: {onlineStatus ? "✅" : "🔴"}</li>
@@ -80,5 +70,4 @@ const Header = () => {
   );
 };
 
-// yaha se export karenge tabhi app.js me import kr payenge
 export default Header;
